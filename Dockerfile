@@ -4,5 +4,7 @@ COPY src /tmp/src/
 WORKDIR /tmp/
 RUN mvn package
 
-FROM tomcat:9.0-jre8
-COPY --from=MAVEN_TOOL_CHAIN /tmp/target/gs-spring-boot-docker-0.1.0.war /usr/local/tomcat/webapps/myapp.war
+FROM openjdk
+COPY --from=MAVEN_TOOL_CHAIN /tmp/target/spring-boot-docker.jar /spring-boot-docker.jar
+EXPOSE 8080
+CMD ["java", "-jar", "spring-boot-docker.jar"]
