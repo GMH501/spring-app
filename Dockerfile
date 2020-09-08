@@ -5,6 +5,7 @@ WORKDIR /tmp/
 RUN mvn package
 
 FROM openjdk
-COPY --from=MAVEN_TOOL_CHAIN /tmp/target/spring-boot-docker.jar /spring-boot-docker.jar
+COPY --from=MAVEN_TOOL_CHAIN /tmp/target/*.jar /
+RUN ls
 EXPOSE 8080
 CMD ["java", "-jar", "spring-boot-docker.jar"]
