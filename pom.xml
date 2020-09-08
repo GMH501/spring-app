@@ -7,8 +7,8 @@
 
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot-docker</artifactId>
-    <version>0.1.1</version>
-    <packaging>war</packaging>
+    <version>0.1.2</version>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
