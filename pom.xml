@@ -3,9 +3,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot-docker</artifactId>
     <version>0.1.0</version>
+    <packaging>war</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -29,8 +29,8 @@
         </dependency>
     </dependencies>
 
-
     <build>
+	    <finalName>spring-boot-docker</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -38,5 +38,22 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>maven-group</id>
+            <url>http://nexus3-devops.apps.cluster-3974.3974.sandbox762.opentlc.com/repository/maven-group/</url>
+        </repository>
+    </repositories>
+        <distributionManagement>
+            <snapshotRepository>
+                <id>nexus-snapshots</id>
+                <url>http://nexus3-devops.apps.cluster-3974.3974.sandbox762.opentlc.com/repository/maven-snapshots/</url>
+            </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://nexus3-devops.apps.cluster-3974.3974.sandbox762.opentlc.com/repository/maven-releases/</url>
+        </repository>
+        </distributionManagement>
 
 </project>
+
