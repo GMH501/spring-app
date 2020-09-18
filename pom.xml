@@ -41,17 +41,17 @@
     <repositories>
         <repository>
             <id>maven-group</id>
-            <url>http://nexus3-devops.apps.cluster-c601.c601.sandbox1743.opentlc.com/repository/maven-group/</url>
+            <url>http://nexus3-devops.apps.cluster-ec04.ec04.sandbox1776.opentlc.com/repository/maven-group/</url>
         </repository>
     </repositories>
         <distributionManagement>
             <snapshotRepository>
                 <id>nexus-snapshots</id>
-                <url>http://nexus3-devops.apps.cluster-c601.c601.sandbox1743.opentlc.com/repository/maven-snapshots/</url>
+                <url>http://nexus3-devops.apps.cluster-ec04.ec04.sandbox1776.opentlc.com/repository/maven-snapshots/</url>
             </snapshotRepository>
         <repository>
             <id>nexus-releases</id>
-            <url>http://nexus3-devops.apps.cluster-c601.c601.sandbox1743.opentlc.com/repository/maven-releases/</url>
+            <url>http://nexus3-devops.apps.cluster-ec04.ec04.sandbox1776.opentlc.com/repository/maven-releases/</url>
         </repository>
         </distributionManagement>
 
