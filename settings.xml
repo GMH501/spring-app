@@ -20,7 +20,7 @@
     <mirror>
       <id>central</id>
       <name>central</name>
-      <url>http://nexus3-devops.apps.cluster-3974.3974.sandbox762.opentlc.com/repository/maven-group/</url>
+      <url>http://nexus3-devops.apps.cluster-ec04.ec04.sandbox1776.opentlc.com/repository/maven-group/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
@@ -41,8 +41,4 @@
             </properties>
         </profile>
      </profiles>
-<<<<<<< HEAD
 </settings>
-=======
-</settings>
->>>>>>> 0b27fbf5e47bfc68c108569389e3c21cf42a4bee
